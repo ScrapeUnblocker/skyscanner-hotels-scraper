@@ -8,7 +8,7 @@ Typical usage::
     from skyscanner_hotels import SkyscannerHotels
 
     scraper = SkyscannerHotels()  # reads SCRAPEUNBLOCKER_KEY from the env
-    hotels = scraper.search("London", checkin="2026-10-15", checkout="2026-10-17")
+    hotels = scraper.search("London", checkin="2027-05-12", checkout="2027-05-14")
     for hotel in hotels:
         print(hotel.name, hotel.price_per_night, hotel.currency)
 """

@@ -2,7 +2,7 @@
 
 Examples::
 
-    skyscanner-hotels "London" --checkin 2026-10-15 --checkout 2026-10-17
+    skyscanner-hotels "London" --checkin 2027-05-12 --checkout 2027-05-14
     skyscanner-hotels "New York" --nights 3 --min-score 4 --csv hotels.csv
 """
 

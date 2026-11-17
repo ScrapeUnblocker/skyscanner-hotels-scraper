@@ -1,9 +1,10 @@
 """A tiny, dependency-light HTTP client for the ScrapeUnblocker plugin API.
 
-The official ``scrapeunblocker`` Python SDK does not (yet) expose the Skyscanner
-plugin endpoints, so this module speaks to them directly. The request contract is
-simple: a ``POST`` with all parameters in the query string and the API key in the
-``x-scrapeunblocker-key`` header.
+The official ``scrapeunblocker`` Python SDK also wraps this endpoint
+(``Client().skyscanner.hotels(...)``); this module speaks to it directly with
+``requests`` instead. The request contract is simple: a ``POST`` with all
+parameters in the query string and the API key in the ``x-scrapeunblocker-key``
+header.
 
 Docs: https://docs.scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos
 """

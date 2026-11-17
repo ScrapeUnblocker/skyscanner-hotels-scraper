@@ -7,14 +7,14 @@ name = "skyscanner-hotels"
 version = "0.1.0"
 description = "Pull live hotel quotes from Skyscanner as clean JSON via the ScrapeUnblocker plugin."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "ScrapeUnblocker" }]
 keywords = ["skyscanner", "hotels", "scraper", "travel", "web-scraping", "scrapeunblocker"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
@@ -36,7 +36,7 @@ where = ["src"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py39"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

@@ -13,7 +13,7 @@ test:
 	pytest -q
 
 run:
-	skyscanner-hotels "London" --checkin 2026-10-15 --checkout 2026-10-17
+	skyscanner-hotels "London"
 
 clean:
 	rm -rf build dist *.egg-info .pytest_cache .ruff_cache

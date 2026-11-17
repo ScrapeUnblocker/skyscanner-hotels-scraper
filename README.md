@@ -1,7 +1,7 @@
 # skyscanner-hotels
 
 [![CI](https://github.com/ScrapeUnblocker/skyscanner-hotels-scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/ScrapeUnblocker/skyscanner-hotels-scraper/actions/workflows/ci.yml)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 Pull **live hotel quotes from Skyscanner** as clean, structured JSON — for any
@@ -27,7 +27,7 @@ and geolocation, the cheapest booking partner with a deep link, and images.
 - 🔎 **Client-side filters** — minimum review score and star level
 - 💾 **Export** — pretty JSON or CSV out of the box
 - 🔁 **Resilient client** — automatic retries with backoff on transient errors
-- 🧪 **Tested** — offline unit tests (mocked API, no credit spent) + CI on 3.9 and 3.12
+- 🧪 **Tested** — offline unit tests (mocked API, no credit spent) + CI on 3.11 and 3.13
 
 ## Install
 
@@ -50,7 +50,7 @@ There's a `.env.example` you can copy to `.env`.
 
 ```bash
 # Cheapest hotels in London for specific dates
-skyscanner-hotels "London" --checkin 2026-10-15 --checkout 2026-10-17 --market UK --currency GBP
+skyscanner-hotels "London" --checkin 2027-05-12 --checkout 2027-05-14 --market UK --currency GBP
 
 # Default to a 3-night stay 30 days out, keep only well-reviewed 4-star+ hotels
 skyscanner-hotels "New York" --nights 3 --min-score 4 --min-stars 4
@@ -83,8 +83,8 @@ scraper = SkyscannerHotels(market="UK", locale="en-GB", currency="GBP")
 
 hotels = scraper.search(
     "London",
-    checkin="2026-10-15",
-    checkout="2026-10-17",
+    checkin="2027-05-12",
+    checkout="2027-05-14",
     adults=2,
     rooms=1,
     max_results=50,
